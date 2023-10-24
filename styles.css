@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+}
+
+.container {
+    height: 400px;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas: 
+    "header header header"
+    "maincontent maincontent sidebar"
+    "maincontent maincontent sidebar"
+    "footer footer footer"
+    ;
+
+}
+
+.box1 {
+    border: 1px solid gray;
+    grid-area: header;
+}
+.box2 {
+    border: 1px solid gray;
+    grid-area: sidebar;
+}
+.box3 {
+    border: 1px solid gray;
+    grid-area: maincontent;
+}
+.box4 {
+    border: 1px solid gray;
+    grid-area: footer;
+}
